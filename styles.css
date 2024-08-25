@@ -1,0 +1,1459 @@
+/* nullstyle */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* Основные стили */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+/* Header */
+.header {
+  color: #fff;
+}
+
+.top-bar {
+  background-color: #1a1a1a;
+}
+
+.top-bar-content {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.nav-bar {
+  background-color: #fff;
+}
+
+.nav-bar-content {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: auto;
+  height: 40px; /* Вы можете изменить высоту в зависимости от необходимого размера логотипа */
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.header .main-nav a {
+  color: #333;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #00000021;
+}
+
+.header .main-nav a.active {
+  color: #0056ff;
+  border: 1px solid #0056ff;
+}
+
+.header .search-contact {
+  display: flex;
+  align-items: center;
+}
+
+.header .search-contact input {
+  border: 1px solid #ced4da;
+  padding: 8px 13px;
+  border-radius: 25px;
+  width: 180px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.header .search-contact .contact-button {
+  background-color: #0056ff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header .search-contact .contact-button:hover {
+  background-color: #0041cc;
+}
+
+/* Breadcrumb */
+
+.breadcrumb-content {
+  background-color: #f3f6fb;
+}
+
+.breadcrumb {
+  padding: 10px 0;
+}
+
+.breadcrumb ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb ul li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb ul li a {
+  color: #6c757d;
+  font-size: 14px;
+  text-decoration: none;
+  height: 32px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breadcrumb ul li .divider {
+  margin: 0 8px;
+  color: #999;
+}
+
+.divider {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breadcrumb ul li .current {
+  color: #000;
+  font-weight: bold;
+}
+
+/* Секция автомобиля */
+
+.car-details-section {
+  background: #f3f6fb;
+  padding: 40px 0;
+}
+
+.car-section {
+  background: transparent;
+}
+
+.car-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.car-title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.car-title {
+  font-size: 36px;
+  line-height: 44px;
+  color: #151515;
+  font-weight: 600;
+}
+
+.car-subtitle {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: rgba(156, 165, 179, 1);
+}
+
+.car-availability {
+  font-size: 14px;
+  line-height: 20px;
+  color: #646970;
+  background-color: rgb(218, 218, 218);
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+
+.car-content {
+  display: flex;
+  gap: 12px;
+}
+
+.car-info {
+  height: 560px;
+  width: 660px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.car-image {
+  background-color: #fff;
+  border-radius: 16px;
+  position: relative;
+}
+
+.car-image img {
+  width: 660px;
+  height: auto;
+  border-radius: 16px;
+}
+
+.car-color-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: #646970;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.color-options {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: transparent;
+  justify-content: flex-start;
+}
+
+.color-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+}
+
+.car-details {
+  height: 478px;
+  width: 660px;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 40px;
+  background: #f3f6fb;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.car-specs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+
+.spec-item {
+  height: 76px;
+  width: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+  padding: 10px;
+  background-color: #e4ecf8;
+  border-radius: 12px;
+}
+
+.spec-item img {
+  margin-bottom: 5px;
+}
+
+.spec-item p:first-child {
+  color: #646970;
+  font-size: 14px;
+}
+
+.spec-item p:last-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #151515;
+}
+
+.car-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #646970;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  cursor: pointer;
+  width: 34px;
+  height: 20px;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  margin-right: 10px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2e58db;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.discount-amount {
+  color: #2e58db;
+  font-weight: 600;
+}
+
+.price-details {
+  margin-top: 16px;
+}
+
+.price-details-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-price-block {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price-details-subtitle {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  display: inline-block;
+}
+
+.main-price {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+  color: #2e58db;
+}
+
+.credit-price {
+  background-color: #e4ecf8;
+  padding: 8px;
+  border-radius: 24px;
+  color: #151515;
+  display: inline-block;
+  color: #2e58db;
+  font-size: 14px;
+}
+
+.strike-through {
+  text-decoration: line-through;
+  color: #999;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.btn-reserve,
+.btn-buy-credit {
+  flex: 1;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-reserve {
+  border: 1px solid #000;
+  background-color: #eaeff7;
+}
+
+.btn-buy-credit {
+  background-color: #2e58db;
+  color: #ffffff;
+}
+
+.btn-reserve:hover {
+  background-color: #c8cdd4;
+}
+
+.btn-buy-credit:hover {
+  background-color: #d8d8d8;
+}
+
+/* Credit Calculator */
+
+.credit-calculator-section-content {
+  background-color: #e2ebf8;
+}
+
+.credit-calculator-section {
+  padding: 40px 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 520px;
+}
+
+.calculator-title {
+  font-size: 28px;
+  color: #151515;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+/* Внутренняя обертка, содержащая сумму кредита и предложение */
+.credit-calculator-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f4fa; /* Бледно-синий цвет */
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 1100px;
+  width: 100%;
+  gap: 40px; /* Расстояние между левой и правой частями */
+}
+
+.credit-amount {
+  flex: 1;
+}
+
+.total-amount {
+  font-size: 18px;
+  color: #151515;
+  font-weight: 500;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-amount-value {
+  font-size: 22px;
+  color: #2e58db;
+  font-weight: 700;
+}
+
+.slider-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.slider-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slider-label {
+  font-size: 14px;
+  color: #6e6e6e;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.slider-credit {
+  width: 100%;
+  cursor: pointer;
+  margin-top: -20px;
+  padding: 0;
+  z-index: 2;
+}
+
+input[type='range'] {
+  width: 100%;
+  height: 2px; /* Линия слайдера тоньше */
+  background: linear-gradient(to right, #0056ff 50%, #e0e0e0 50%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  height: 25px;
+  border-radius: 50%;
+  background: #0056ff;
+  cursor: pointer;
+}
+
+.slider-container {
+  background-color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+}
+
+.slider-values {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #646970;
+}
+
+.slider-value {
+  font-weight: 600;
+}
+
+/* Блок с предложением */
+.offer {
+  width: 35%;
+  padding: 20px 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.offer-title {
+  font-size: 20px;
+  line-height: 28px;
+  color: #151515;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.offer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.monthly-payment-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.monthly-payment-label {
+  font-size: 14px;
+  color: #151515;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.monthly-payment {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.monthly-payment button {
+  background-color: transparent;
+  border: 1px solid gray;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.monthly-payment span {
+  font-size: 24px;
+  color: #2e58db;
+  font-weight: 700;
+}
+
+.disclaimer-wrapper {
+  border-radius: 8px;
+  background-color: #edf2fb;
+}
+
+.disclaimer {
+  font-size: 14px;
+  line-height: 20px;
+  color: #999;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.btn-credit {
+  padding: 12px 24px;
+  background-color: #2e58db;
+  color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: auto; /* Кнопка справа */
+}
+
+.btn-credit:hover {
+  background-color: #1c3e92;
+}
+
+/* Comparison Section */
+.comparison-section-content {
+  background-color: #eaeff7;
+  padding: 40px 0;
+}
+
+.comparison-section {
+  width: 100%;
+}
+
+.comparison-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #151515;
+  margin-bottom: 20px;
+  margin: 0;
+  padding: 40px 0 60px 0;
+}
+
+.comparison-section h2 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #151515;
+  font-weight: 600;
+  text-align: center;
+}
+
+.comparison-section span {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+  text-align: center;
+  color: gray;
+}
+
+.comparison-cards-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.comparison-cards-container {
+  display: flex;
+  gap: 12px;
+  transition: transform 0.3s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+.comparison-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 280px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.remove-card {
+  background-color: transparent;
+  border: 1px solid #e1e5eb;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #7b7b7b;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.remove-card:hover {
+  background-color: #f1f3f5;
+  color: #333;
+}
+
+.card-content {
+  text-align: left;
+}
+
+.model-name {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #151515;
+  margin: 0;
+}
+
+.model-specs {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #151515;
+  margin: 0;
+}
+
+.price-and-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.model-price {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0056ff;
+  font-weight: 600;
+  margin: 0;
+}
+
+.model-price span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #0056ff;
+}
+
+.apply-button {
+  background-color: #0056ff;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #0041cc;
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  align-items: center;
+  text-align: center;
+}
+
+.arrow {
+  background-color: #f0f4fa18;
+  border: 1px solid #e1e5eb;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.arrow:hover {
+  background-color: #eaeff7;
+}
+
+.left-arrow {
+  left: -30px;
+}
+
+.right-arrow {
+  right: -30px;
+}
+
+/* Safety Section */
+.safety-section-content {
+  background-color: #ffffff;
+}
+
+.safety-section {
+  padding: 40px 0;
+}
+
+.options-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px solid #0000005e;
+  padding: 0 0 20px 0;
+}
+
+.safety-section h2 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #151515;
+  margin: 0;
+}
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.options-container {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.options-container.active {
+  display: flex;
+}
+
+.option-title {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.option-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.options-row {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.option-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeff7;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 16px;
+  color: #151515;
+  width: 290px;
+}
+
+.option-value {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.849);
+}
+
+.option-value-minus {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 100%;
+  background-color: rgba(75, 75, 75, 0.849);
+}
+
+.menu-icon, .phone-icon {
+  display: none;
+}
+
+
+/* Адаптив под мобилки */
+
+/* For tablets and larger smartphones */
+@media (max-width: 1025px) {
+  .container {
+    max-width: 768px;
+    padding: 0 20px;
+  }
+
+  .nav-bar-content {
+    gap: 5px;
+  }
+
+  .main-nav {
+    display: none;
+    gap: 10px;
+  }
+
+  .breadcrumb ul {
+    flex-wrap: wrap;
+  }
+
+  .breadcrumb ul li {
+    margin-bottom: 5px;
+  }
+
+  .car-header {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
+
+  .car-title-row {
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .car-availability {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .car-details-section {
+    padding: 20px 0;
+  }
+
+  .car-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .car-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .car-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .car-info {
+    width: 100%;
+  }
+
+  .car-image img {
+    width: 100%;
+  }
+
+  .car-details {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .car-specs {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .price-details {
+    margin-top: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .credit-calculator-section {
+    padding: 20px;
+  }
+
+  .credit-calculator-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .offer {
+    width: 90%;
+  }
+
+  .comparison-section {
+    padding: 20px 0;
+  }
+
+  .comparison-cards-wrapper {
+    overflow-x: scroll;
+  }
+
+  .comparison-cards-container {
+  }
+
+  .safety-section {
+    padding: 20px;
+  }
+
+  .options-container {
+    gap: 10px;
+  }
+
+  .option-cell {
+  }
+}
+
+/* For smartphones */
+@media (max-width: 769px) {
+  .container {
+    max-width: 425px;
+    padding: 0 10px;
+  }
+
+  .breadcrumb ul {
+    font-size: 12px;
+  }
+
+  .contact-button {
+    display: none;
+  }
+
+  .car-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .car-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .car-content {
+    gap: 15px;
+  }
+
+  .car-info {
+    height: auto;
+  }
+
+  .car-details {
+    padding: 15px;
+  }
+
+  .spec-item {
+    width: 100%;
+  }
+
+  .main-price {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .credit-calculator-section {
+    padding: 10px;
+  }
+
+  .credit-calculator-wrapper {
+    padding: 20px;
+  }
+
+  .slider-group {
+    gap: 15px;
+  }
+
+  .slider-item {
+    gap: 5px;
+  }
+
+  .comparison-section h2 {
+    font-size: 24px;
+  }
+
+  .comparison-cards-wrapper {
+    overflow-x: scroll;
+  }
+
+  .comparison-cards-container {
+    gap: 8px;
+  }
+
+  .comparison-card {
+    width: 240px;
+  }
+
+  .safety-section h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .option-title {
+    font-size: 14px;
+  }
+
+  .option-cell {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 426px) {
+  .container {
+    max-width: 360px;
+    padding: 0 10px;
+  }
+
+  .menu-icon, .phone-icon {
+    display: block;
+  }
+
+  .nav-bar-content {
+    justify-content: space-between; /* Adjust alignment */
+  }
+
+  .logo {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-icon img,
+  .phone-icon img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+  }
+  
+  .main-nav,
+  .search-contact {
+    display: none; /* Hide navigation and search on small screens */
+  }
+
+  .search-contact input {
+    display: none;
+  }
+
+  .top-bar {
+    display: none;
+  }
+
+  .nav-bar-content {
+    justify-content: center;
+  }
+
+  .breadcrumb ul {
+    font-size: 12px;
+  }
+
+  .contact-button {
+    display: none;
+  }
+
+  .car-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .car-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .car-content {
+    gap: 15px;
+  }
+
+  .car-info {
+    height: auto;
+  }
+
+  .car-details {
+    padding: 15px;
+    border: none;
+  }
+
+  .car-specs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px; /* Adjusts the space between items */
+    margin-bottom: 20px;
+  }
+
+  .spec-item {
+    line-height: 18px;
+    font-size: 12px;
+    width: 158px;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px;
+    width: calc(40% - 1px);
+    gap: 2px;
+  }
+
+  .switch {
+    justify-content: start;
+  }
+
+  .switch:nth-last-child(3) {
+    display: none;
+  }
+
+  .main-price {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .main-price-block {
+    display: block;
+  }
+
+  .price-details-subtitle {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+  }
+
+  .calculator-title {
+    letter-spacing: -0.8px;
+  }
+
+  .buttons {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  .credit-calculator-section {
+    padding: 10px;
+  }
+
+  .credit-calculator-wrapper {
+    padding: 20px;
+  }
+
+  .slider-group {
+    gap: 15px;
+  }
+
+  .slider-credit {
+    margin-top: -15px;
+  }
+
+  .offer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .btn-credit {
+    margin: 0;
+    padding: 14px 80px;
+  }
+
+  .monthly-payment-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .monthly-payment-label {
+    font-weight: normal;
+  }
+
+  .disclaimer {
+    padding: 4px 6px;
+  }
+
+  .slider-item {
+    gap: 5px;
+  }
+
+  .comparison-section span {
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+  }
+
+  .comparison-section h2 {
+    font-size: 24px;
+    padding: 40px 0 20px 0;
+  }
+
+  .comparison-cards-wrapper {
+    overflow-x: scroll;
+  }
+
+  .comparison-card {
+    width: 240px;
+  }
+
+  .safety-section h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .option-title {
+    font-size: 14px;
+  }
+
+  .option-cell {
+    font-size: 16px;
+    width: 240px;
+  }
+}
