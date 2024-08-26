@@ -1059,31 +1059,38 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .option-value {
-  width: 24px;
-  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
   color: white;
-  /* padding: 5px 10px; */
-  font-size: 16px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
+  border-radius: 18px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.849);
 }
 
 .option-value-minus {
+  background-color: transparent;
+  cursor: pointer;
   color: white;
-  width: 24px;
-  height: 24px;
-  color: white;
-  /* padding: 5px 10px; */
-  font-size: 16px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
+  border-radius: 18px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0 auto;
   background-color: rgba(75, 75, 75, 0.849);
 }
 
