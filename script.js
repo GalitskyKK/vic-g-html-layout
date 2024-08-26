@@ -63,7 +63,7 @@ document.querySelector('.toggle-button').addEventListener('click', function () {
   optionsContainer.classList.toggle('active');
 
   // Поворот стрелки при открытии/закрытии
-  this.querySelector('.arrow').style.transform = optionsContainer.classList.contains('active')
+  this.querySelector('.arrow-safety').style.transform = optionsContainer.classList.contains('active')
     ? 'rotate(180deg)'
     : 'rotate(0deg)';
 });

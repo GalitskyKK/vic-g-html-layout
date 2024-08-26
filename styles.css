@@ -245,9 +245,9 @@ body {
   justify-content: center;
 }
 
-.breadcrumb ul li .current {
+.current {
+  font-size: 14px;
   color: #000;
-  font-weight: bold;
 }
 
 /* Секция автомобиля */
@@ -702,11 +702,18 @@ input[type='range']::-webkit-slider-thumb {
 .monthly-payment button {
   background-color: transparent;
   border: 1px solid gray;
-  font-size: 12px;
   cursor: pointer;
-  padding: 6px 12px;
   border-radius: 18px;
-  text-align: center;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .monthly-payment span {
@@ -716,6 +723,9 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .disclaimer-wrapper {
+  display: flex;
+  gap: 8px;
+  padding: 8px 12px;
   border-radius: 8px;
   background-color: #edf2fb;
 }
@@ -724,7 +734,6 @@ input[type='range']::-webkit-slider-thumb {
   font-size: 14px;
   line-height: 20px;
   color: #999;
-  padding: 8px 12px;
   display: inline-block;
 }
 
@@ -961,6 +970,18 @@ input[type='range']::-webkit-slider-thumb {
   transition: transform 0.3s ease;
 }
 
+.arrow-safety {
+  background-color: #f0f4fa18;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 .options-container {
   display: none;
   flex-direction: column;
@@ -1006,15 +1027,30 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .option-value {
+  width: 24px;
+  height: 24px;
   color: white;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
+  font-size: 16px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 100%;
   background-color: rgba(0, 0, 0, 0.849);
 }
 
 .option-value-minus {
   color: white;
-  padding: 5px 10px;
+  width: 24px;
+  height: 24px;
+  color: white;
+  /* padding: 5px 10px; */
+  font-size: 16px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 100%;
   background-color: rgba(75, 75, 75, 0.849);
 }
@@ -1212,7 +1248,11 @@ input[type='range']::-webkit-slider-thumb {
   }
 
   .comparison-section h2 {
-    font-size: 24px;
+    font-size: 26px;
+  }
+
+  .model-price span {
+    font-size: 16px;
   }
 
   .comparison-cards-wrapper {
@@ -1286,6 +1326,7 @@ input[type='range']::-webkit-slider-thumb {
 
   .breadcrumb ul {
     font-size: 12px;
+    justify-content: space-between;
   }
 
   .contact-button {
@@ -1340,6 +1381,14 @@ input[type='range']::-webkit-slider-thumb {
     gap: 2px;
   }
 
+  .calculator-title {
+    padding-top: 30px;
+  }
+
+  .arrows {
+    display: none;
+  }
+
   .switch {
     justify-content: start;
   }
@@ -1379,11 +1428,14 @@ input[type='range']::-webkit-slider-thumb {
   }
 
   .credit-calculator-section {
-    padding: 10px;
+    height: 100%;
   }
 
   .credit-calculator-wrapper {
     padding: 20px;
+    padding-bottom: 120px;
+    background: none;
+    position: relative;
   }
 
   .slider-group {
@@ -1394,17 +1446,20 @@ input[type='range']::-webkit-slider-thumb {
     margin-top: -15px;
   }
 
+  .offer {
+    padding: 20px 12px;
+  }
+
   .offer-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 24px;
+    gap: 20px;
   }
 
   .btn-credit {
     margin: 0;
-    padding: 14px 80px;
+    padding: 14px 90px;
   }
 
   .monthly-payment-wrapper {
@@ -1417,22 +1472,54 @@ input[type='range']::-webkit-slider-thumb {
     font-weight: normal;
   }
 
-  .disclaimer {
-    padding: 4px 6px;
+  .monthly-payment button {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 200;
+    padding: 0;
   }
+
+  .disclaimer-wrapper {
+    position: absolute;
+    bottom: 40px;
+    gap: 8px;
+    display: flex;
+    align-items: start;
+    padding: 8px 12px;
+    width: 288px;
+  }
+
+  .disclaimer-wrapper img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .disclaimer {
+    font-size: small;
+  }
+
 
   .slider-item {
     gap: 5px;
   }
 
+  .comparison-section-content {
+    padding: 0;
+  }
+
   .comparison-section span {
     font-size: 24px;
-    padding: 20px 0 20px 0;
   }
 
   .comparison-section h2 {
     font-size: 24px;
-    padding: 40px 0 20px 0;
+    padding: 20px 0 20px 0;
+    line-height: 1;
   }
 
   .comparison-cards-wrapper {
@@ -1440,7 +1527,20 @@ input[type='range']::-webkit-slider-thumb {
   }
 
   .comparison-card {
-    width: 240px;
+    width: 260px;
+  }
+
+  .model-price span {
+    font-size: 16px;
+  }
+
+  .price-and-button {
+    gap: 4px;
+  }
+
+  .apply-button {
+    height: 32px;
+    padding: 6px 12px;
   }
 
   .safety-section h2 {
