@@ -179,7 +179,7 @@ body {
   width: 180px;
   font-size: 14px;
   line-height: 20px;
-  background-image: url('img/search-lg.svg');
+  background-image: url('../img/search-lg.svg');
   background-repeat: no-repeat;
   background-position: 10px center; /* Позиция иконки внутри инпута */
   background-size: 16px; /* Размер иконки */
