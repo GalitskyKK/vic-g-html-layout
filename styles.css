@@ -166,23 +166,33 @@ body {
   border: 1px solid #0056ff;
 }
 
-.header .search-contact {
+.search-contact {
   display: flex;
   align-items: center;
 }
 
-.header .search-contact input {
+.search-contact input {
   border: 1px solid #ced4da;
-  padding: 8px 13px;
-  border-radius: 25px;
+  padding: 8px 12px;
+  padding-left: 35px; /* Оставляем место для иконки */
+  border-radius: 16px;
   width: 180px;
   font-size: 14px;
   line-height: 20px;
+  background-image: url('img/search-lg.svg');
+  background-repeat: no-repeat;
+  background-position: 10px center; /* Позиция иконки внутри инпута */
+  background-size: 16px; /* Размер иконки */
+}
+
+.search-contact input::placeholder {
+  color: rgba(156, 165, 179, 1);
+  opacity: 1;
 }
 
 .header .search-contact .contact-button {
   background-color: #0056ff;
-  border-radius: 25px;
+  border-radius: 16px;
   padding: 10px 20px;
   color: #fff;
   font-size: 14px;
@@ -265,7 +275,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .car-title-row {
@@ -292,9 +302,21 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #646970;
-  background-color: rgb(218, 218, 218);
+  background-color:rgba(220, 225, 233, 1);
   padding: 4px 12px;
   border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.car-availability::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background-color: rgba(46, 88, 219, 1); 
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .car-content {
@@ -383,6 +405,16 @@ body {
   background-color: #e4ecf8;
   border-radius: 12px;
 }
+
+  .spec-item-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .spec-item-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
 .spec-item img {
   margin-bottom: 5px;
@@ -487,12 +519,12 @@ input:checked + .slider:before {
 }
 
 .credit-price {
-  background-color: #e4ecf8;
+  background-color: rgba(228, 236, 248, 1);
   padding: 8px;
   border-radius: 24px;
   color: #151515;
   display: inline-block;
-  color: #2e58db;
+  color: rgba(22, 65, 188, 1);
   font-size: 14px;
 }
 
@@ -1222,8 +1254,35 @@ input[type='range']::-webkit-slider-thumb {
     padding: 15px;
   }
 
+  .car-specs {
+            display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 20px;
+  }
+
   .spec-item {
-    width: 100%;
+        line-height: 18px;
+        font-size: 14px;
+        height: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+        padding: 10px;
+        border-radius: 12px;
+        gap: 4px;
+  }
+
+  .spec-item-title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .spec-item img {
+    margin-bottom: 0;
   }
 
   .main-price {
@@ -1365,20 +1424,17 @@ input[type='range']::-webkit-slider-thumb {
   }
 
   .spec-item {
-    line-height: 18px;
-    font-size: 12px;
-    width: 158px;
-    height: 64px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-    border-radius: 12px;
-    width: calc(40% - 1px);
-    gap: 2px;
+        line-height: 18px;
+        font-size: 14px;
+        height: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        text-align: start;
+        padding: 10px;
+        border-radius: 12px;
+        gap: 4px;
   }
 
   .calculator-title {
